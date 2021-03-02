@@ -265,18 +265,18 @@ input[type="password"] {
 
 .signin-card .copywright {
     max-width: 700px;
-    font-family: "Open Sans Condensed";
+    font-family: "Raleway";
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 13px;
+    line-height: 25px;
     color: #01001d80;
     margin: auto;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .signin-card .copywright {
-        font-size: 12px;
-        line-height: 22px;
+        font-size: 11px;
+        line-height: 20px;
     }
 }
