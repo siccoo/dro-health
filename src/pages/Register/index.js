@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
 // import { GoogleLogin } from 'react-google-login';
 import "./style.css";
 
@@ -11,6 +12,9 @@ const Register = (props) => {
     //     props.history.push("/");
     //     window.location.reload();
     // };
+
+    const { register, handleSubmit, errors } = useForm();
+    const onSubmit = (data) => console.log(data);
 
     useEffect(() => {
         document.title = "Create account | DRO Health";
@@ -49,7 +53,7 @@ const Register = (props) => {
             <div className="container">
                 <div className="row">
                     <div className="col-sm-12 col-md-10 offset-md-2">
-                        <form>
+                        <form onSubmit={handleSubmit(onSubmit)} noValidate autoComplete="off">
                             <p>Sign Up!</p>
                             <div className="form-group">
                                 <label htmlFor="inputForUsername">Username</label>
