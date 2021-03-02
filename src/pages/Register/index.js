@@ -59,9 +59,24 @@ const Register = (props) => {
                                 <label htmlFor="inputForUsername">Username</label>
                                 <input 
                                     id="inputForUsername"
+                                    name="username"
                                     type="text"
                                     aria-describedby="Enter your username"
-                                    placeholder="Enter your username" 
+                                    placeholder="Enter your username"
+                                    ref={register({
+                                        required: {
+                                          value: true,
+                                          message: "Please enter your user name",
+                                        },
+                                        minLength: {
+                                          value: 4,
+                                          message: "Minimum 4 characters are allowed",
+                                        },
+                                        maxLength: {
+                                          value: 15,
+                                          message: "Maximum 15 characters are allowed",
+                                        },
+                                      })}
                                 />
                             </div>
                             <div className="form-row">
@@ -69,35 +84,102 @@ const Register = (props) => {
                                         <label htmlFor="inputFirstname">First Name</label>
                                         <input 
                                             id="inputForFirstname"
+                                            name="firstname"
                                             type="text"
                                             aria-describedby="Enter your first name"
-                                            placeholder="Enter your first name"  
+                                            placeholder="Enter your first name"
+                                            ref={register({
+                                                required: {
+                                                  value: true,
+                                                  message: "Please enter your first name",
+                                                },
+                                                minLength: {
+                                                  value: 6,
+                                                  message: "Minimum 6 characters are allowed",
+                                                },
+                                                maxLength: {
+                                                  value: 15,
+                                                  message: "Maximum 15 characters are allowed",
+                                                },
+                                              })}  
                                         />
                                 </div>
                                 <div className="form-group col-md-6">
                                     <label htmlFor="inputForLastname">Last Name</label>
                                     <input 
                                         id="inputForLastname"
+                                        name="lastname"
                                         type="text"
                                         aria-describedby="Enter your last name"
-                                        placeholder="Enter your last name"  />
+                                        placeholder="Enter your last name"
+                                        ref={register({
+                                            required: {
+                                              value: true,
+                                              message: "Please enter your last name",
+                                            },
+                                            minLength: {
+                                              value: 6,
+                                              message: "Minimum 6 characters are allowed",
+                                            },
+                                            maxLength: {
+                                              value: 15,
+                                              message: "Maximum 15 characters are allowed",
+                                            },
+                                          })}
+                                    />
                                 </div>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="InputForEmail">Email address</label>
                                 <input 
                                     id="inputForEmail"
+                                    name="email"
                                     type="email"
                                     aria-describedby="Enter email address"
-                                    placeholder="Enter email address" />
+                                    placeholder="Enter email address" 
+                                    ref={register({
+                                        required: {
+                                          value: true,
+                                          message: "Please enter your email address",
+                                        },
+                                        pattern: {
+                                          value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                                          message: "Enter a valid email address",
+                                        },
+                                        minLength: {
+                                          value: 6,
+                                          message: "Minimum 6 characters are allowed",
+                                        },
+                                        maxLength: {
+                                          value: 255,
+                                          message: "Maximum 255 characters are allowed",
+                                        },
+                                      })}
+                                />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="inputForPassword">Password</label>
                                 
                                 <input 
                                     type="password"
+                                    name="password"
                                     id="inputForPassword"
-                                    placeholder="Enter password" />
+                                    placeholder="Enter password" 
+                                    ref={register({
+                                        required: {
+                                          value: true,
+                                          message: "Please enter password",
+                                        },
+                                        minLength: {
+                                          value: 6,
+                                          message: "Minimum 6 characters are allowed",
+                                        },
+                                        maxLength: {
+                                          value: 255,
+                                          message: "Maximum 255 characters are allowed",
+                                        },
+                                      })}
+                                />
                             </div>
                             <button type="submit" className="">Register</button>
                             <Link className="forgot-password" to="/login">Already Registered?</Link>
