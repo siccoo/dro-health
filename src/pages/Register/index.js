@@ -1,11 +1,22 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { GoogleLogin } from 'react-google-login';
 import "./style.css";
 
 import Logo from "../../images/dro-logo.png";
 import Icon1 from "../../images/sign in.png";
 
-const Register = () => {
+const Register = (props) => {
+    const responseGoogle = () => {
+        props.history.push("/");
+        window.location.reload();
+    };
+
+    useEffect(() => {
+        document.title = "Create account | DRO Health";
+    }, []);
+
+
    return (
        <div>
            <section className="nav-section">
@@ -34,7 +45,7 @@ const Register = () => {
                 </div>
         </section>
 
-        <section className="login-card">
+        <section className="signin-card">
             <div className="container">
                 <div className="row">
                     <div className="col-sm-12 col-md-10 offset-md-2">
@@ -55,6 +66,14 @@ const Register = () => {
                             <Link className="forgot-password">Forgot Password?</Link>
                             <div className="" id="social-icons mt-5">
                                 <img className="so-icon" src={Icon1} alt="alternative" />
+                                <GoogleLogin
+                                    clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+                                    buttonText="Continue with Google"
+                                    onSuccess={()=>responseGoogle}
+                                    onFailure={()=>responseGoogle}
+                                    cookiePolicy={'single_host_origin'}
+                                    className="google"
+                                />
                             </div>
                         </form>
                     </div>

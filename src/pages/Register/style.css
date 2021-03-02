@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+/* ==========================================================================
+ Navigation
+========================================================================== */
+
+.nav-section {
+    background: #fff;
+}
+
+.navbar {
+    padding: 5px 40px !important;
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .navbar {
+        padding: 10px !important;
+    }
+}
+  
+.nav-bg {
+    background: #fff;
+    border: none;
+}
+  
+.navbar-brand {
+    padding: 0px, 0px !important;
+}
+  
+.navbar-nav .nav-item {
+      padding-right:20px;
+}
+  
+.home-logo {
+    width: 174.86px;
+    height: 54.29px;
+}
+
+@media only screen and (max-width:1024px) {
+    .home-logo {
+        width: 100px;
+        height: 30px;
+    }
+}
+
+.navbar-nav .nav-item .nav-btn {
+    background: #462686;
+    border-radius: 100px;
+    color: #fff;
+    font-family: "Open Sans Condensed";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 10px 35px;
+    /* max-width: 172px; */
+    text-decoration: none;
+}
+
+@media only screen and (max-width:1024px) {
+    .navbar-nav .nav-item .nav-btn {
+       font-size: 12px; 
+       line-height: 12px;
+       border-radius: 2px;
+       padding: 8px 10px;
+    }
+}
+
+.navbar-nav .nav-item .nav-btn1 {
+    font-family: "Open Sans Condensed";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;  
+    color: #454545 !important;
+    letter-spacing: normal;
+    transition: .3s cubic-bezier(0.13, 0.38, 0.45, 0.94);
+    text-decoration: none;
+}
+
+@media only screen and (max-width:1024px) {
+    .navbar-nav .nav-item .nav-btn1 {
+       font-size: 12px; 
+       line-height: 12px;
+    }
+}
+  
+.navbar-toggler {
+    width: 47px;
+    border:none;
+}
+  
+.navbar-toggler .line{
+      float: left;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      margin-bottom: 5px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 54px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        background: linear-gradient(90deg, #0353A4 0%, #023E7D 100%);
+    }
+    .navbar-collapse.collapsing {
+        height: auto;
+        -webkit-transition: left 0.3s ease;
+        -o-transition: left 0.3s ease;
+        -moz-transition: left 0.3s ease;
+        transition: left 0.3s ease;
+        left: -100%;
+    }
+    .navbar-collapse.show {
+        left: 0;
+        -webkit-transition: left 0.3s ease-in;
+        -o-transition: left 0.3s ease-in;
+        -moz-transition: left 0.3s ease-in;
+        transition: left 0.3s ease-in;
+    }
+}
+
+.login-card {
+    margin-top: 70px;
+}
+
+.login-card form {
+    max-width: 700px;
+}
+
+.login-card h3 {
+    /* max-width: 124px; */
+    font-family: "Open Sans Condensed";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 38px;
+    color: #333333;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .login-card h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+.login-card p {
+    max-width: 700px;
+    font-family: "Open Sans Condensed";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: rgba(69, 69, 69, 0.8);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width:1024px) {
+    .login-card p {
+       font-size: 12px; 
+       line-height: 22px;
+    }
+}
+
+.login-card label {
+    font-family: "Open Sans Condensed";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #333333;
+}
+
+@media (max-width: 1024px) {
+    .login label {
+        font-size: 12px;
+    }
+}
+
+.login-card span {
+    right: 0;
+    position: absolute;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 0;
+    width: 3.2rem;  
+    box-sizing: border-box;
+}
+
+/* span .icon { */
+    
+    /* color: #a7abc3; */
+/* } */
+
+.login-card input[type="email"],
+input[type="password"] {
+    padding: .6em .5em;
+    background: #FFFFFF;
+    border: 2px solid rgba(51, 51, 51, 0.8);
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .login-card input[type="email"],
+    input[type="password"] {
+        padding: .4em .3em;
+        width: 100%;
+    }
+}
+
+.login-card .forgot-password {
+    max-width: 700px;
+    font-family: "Open Sans Condensed";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #462686;
+    margin: 292px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    text-align: center;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:1024px) {
+    .login-card .forgot-password {
+       font-size: 12px; 
+       line-height: 22px;
+       margin: auto;
+    }
+}
+
+.login-card button {
+    background: #462686;
+    border-radius: 50px;
+    width: 100%;
+    color: #fff;
+    font-family: "Open Sans Condensed";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 12px 15px;
+    text-decoration: none;
+    border: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .login-card button {
+        padding: 6px 9px;
+        font-size: 12px;
+    }
+}
+
+.login-card .social-icons {
+    position: absolute; 
+   bottom: -35px; 
+   padding: 5px;
+   margin: 0px 55px;
+   align-items: center;
+   border-radius: 5px;
+}
+
+.login-card .so-icon {
+    padding: 10px;
+}
+
+.login-card .copywright {
+    max-width: 700px;
+    font-family: "Open Sans Condensed";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #01001d80;
+    margin: auto;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .login-card .copywright {
+        font-size: 12px;
+        line-height: 22px;
+    }
+}
