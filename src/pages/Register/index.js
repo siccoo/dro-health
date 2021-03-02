@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { GoogleLogin } from 'react-google-login';
+// import { GoogleLogin } from 'react-google-login';
 import "./style.css";
 
 import Logo from "../../images/dro-logo.png";
-import Icon1 from "../../images/sign in.png";
+// import Icon1 from "../../images/sign in.png";
 
 const Register = (props) => {
-    const responseGoogle = () => {
-        props.history.push("/");
-        window.location.reload();
-    };
+    // const responseGoogle = () => {
+    //     props.history.push("/");
+    //     window.location.reload();
+    // };
 
     useEffect(() => {
         document.title = "Create account | DRO Health";
@@ -97,7 +97,7 @@ const Register = (props) => {
                             </div>
                             <button type="submit" className="">Register</button>
                             <Link className="forgot-password" to="/login">Already Registered?</Link>
-                            <div className="" id="social-icons mt-5">
+                            {/* <div className="" id="social-icons mt-5">
                                 <img className="so-icon" src={Icon1} alt="alternative" />
                                 <GoogleLogin
                                     clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
@@ -107,7 +107,7 @@ const Register = (props) => {
                                     cookiePolicy={'single_host_origin'}
                                     className="google"
                                 />
-                            </div>
+                            </div> */}
                         </form>
                     </div>
                     <div className="col-md-12">
