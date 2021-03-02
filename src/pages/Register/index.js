@@ -111,7 +111,7 @@ const Register = (props) => {
                         </form>
                     </div>
                     <div className="col-md-12">
-                        <p className="copywright mt-5">© 2020 DROHealth.com. All Rights Reserved. </p>
+                        <p className="copywright mt-3">© 2020 DROHealth.com. All Rights Reserved. </p>
                     </div>
                 </div>
             </div>
