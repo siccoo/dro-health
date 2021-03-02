@@ -228,14 +228,14 @@ input[type="password"] {
 }
 
 .signin-card button {
-    background: #462686;
+    background: linear-gradient(90deg, #11A2BD 30%, #8B5CD4 100%);
     border-radius: 50px;
     width: 100%;
     color: #fff;
-    font-family: "Open Sans Condensed";
+    font-family: "Raleway";
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 16px;
     padding: 12px 15px;
     text-decoration: none;
@@ -261,6 +261,7 @@ input[type="password"] {
 .signin-card .so-icon {
     padding: 10px;
 }
+
 
 .signin-card .copywright {
     max-width: 700px;

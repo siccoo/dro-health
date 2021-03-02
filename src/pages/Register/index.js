@@ -71,7 +71,7 @@ const Register = (props) => {
                                     onSuccess={()=>responseGoogle}
                                     onFailure={()=>responseGoogle}
                                     cookiePolicy={'single_host_origin'}
-                                    className="google"
+                                    className="so-icon"
                                 />
                             </div>
                         </form>
