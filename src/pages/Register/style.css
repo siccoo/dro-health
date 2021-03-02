@@ -39,8 +39,8 @@
 
 @media only screen and (max-width:1024px) {
     .home-logo {
-        width: 100px;
-        height: 30px;
+        width: 80px;
+        height: 20px;
     }
 }
 
@@ -48,10 +48,10 @@
     background: linear-gradient(90deg, #11A2BD 10%, #8B5CD4 100%);
     border-radius: 100px;
     color: #fff;
-    font-family: "Open Sans Condensed";
+    font-family: "Raleway";
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 16px;
     padding: 10px 35px;
     /* max-width: 172px; */
@@ -68,9 +68,9 @@
 }
 
 .navbar-nav .nav-item .nav-btn1 {
-    font-family: "Open Sans Condensed";
+    font-family: "Raleway";
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 16px;  
     color: #454545 !important;
     letter-spacing: normal;
@@ -127,41 +127,23 @@
 }
 
 .signin-card {
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .signin-card form {
     max-width: 700px;
 }
 
-.signin-card h3 {
-    /* max-width: 124px; */
-    font-family: "Open Sans Condensed";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 38px;
-    color: #333333;
-    text-align: center;
-}
-
-@media (max-width: 992px) {
-    .signin-card h3 {
-        font-size: 20px;
-        line-height: 24px;
-    }
-}
-
 .signin-card p {
     max-width: 700px;
-    font-family: "Open Sans Condensed";
+    font-family: "Raleway";
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 27px;
     color: rgba(69, 69, 69, 0.8);
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width:1024px) {
@@ -172,10 +154,10 @@
 }
 
 .signin-card label {
-    font-family: "Open Sans Condensed";
+    font-family: "Raleway";
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 16px;
     color: #333333;
 }
@@ -208,7 +190,7 @@
 
 .signin-card input[type="email"],
 input[type="password"] {
-    padding: .6em .5em;
+    padding: .5em .4em;
     background: #FFFFFF;
     border: 2px solid rgba(51, 51, 51, 0.8);
     box-sizing: border-box;
@@ -226,13 +208,13 @@ input[type="password"] {
 
 .signin-card .forgot-password {
     max-width: 700px;
-    font-family: "Open Sans Condensed";
+    font-family: "Raleway";
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 27px;
-    color: #462686;
-    margin: 292px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    color: #1D2365;
+    margin: 282px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     text-align: center;
     text-decoration: none;
 }

@@ -50,8 +50,7 @@ const Register = (props) => {
                 <div className="row">
                     <div className="col-sm-12 col-md-10 offset-md-2">
                         <form>
-                            <h3>Sign In</h3>
-                            <p>Welcome Back!</p>
+                            <p>Sign Up!</p>
                             <div className="form-group">
                                 <label for="exampleInputEmail1">Email / Username</label>
                                 <input type="email"  id="email_address" />
