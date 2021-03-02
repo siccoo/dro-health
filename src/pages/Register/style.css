@@ -189,7 +189,8 @@
 /* } */
 
 .signin-card input[type="email"],
-input[type="password"] {
+input[type="password"], 
+input[type="text"] {
     padding: .5em .4em;
     background: #FFFFFF;
     border: 2px solid rgba(51, 51, 51, 0.8);
@@ -260,6 +261,28 @@ input[type="password"] {
 
 .signin-card .so-icon {
     padding: 10px;
+}
+
+.signin-card .google {
+    background: #E2EEE7 !important;
+    border-radius: 4px;
+    width: 40%;
+    color: #0C1810 !important;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    padding: 12px 15px;
+    border: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .signin-card .google {
+        padding: 6px 9px;
+        font-size: 12px;
+    }
 }
 
 
