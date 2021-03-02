@@ -60,23 +60,25 @@ const Register = (props) => {
                                     placeholder="Enter your username" 
                                 />
                             </div>
-                            <div className="form-group">
-                                <label htmlFor="inputFirstname">First Name</label>
-                                <input 
-                                    id="inputForFirstname"
-                                    type="text"
-                                    aria-describedby="Enter your first name"
-                                    placeholder="Enter your first name"  
-                                />
+                            <div className="form-row">
+                                <div className="form-group col-md-6">
+                                        <label htmlFor="inputFirstname">First Name</label>
+                                        <input 
+                                            id="inputForFirstname"
+                                            type="text"
+                                            aria-describedby="Enter your first name"
+                                            placeholder="Enter your first name"  
+                                        />
+                                </div>
+                                <div className="form-group col-md-6">
+                                    <label htmlFor="inputForLastname">Last Name</label>
+                                    <input 
+                                        id="inputForLastname"
+                                        type="text"
+                                        aria-describedby="Enter your last name"
+                                        placeholder="Enter your last name"  />
+                                </div>
                             </div>
-                            {/* <div className="form-group">
-                                <label htmlFor="inputForLastname">Last Name</label>
-                                <input 
-                                    id="inputForLastname"
-                                    type="text"
-                                    aria-describedby="Enter your last name"
-                                    placeholder="Enter your last name"  />
-                            </div> */}
                             <div className="form-group">
                                 <label htmlFor="InputForEmail">Email address</label>
                                 <input 
@@ -108,7 +110,7 @@ const Register = (props) => {
                             </div>
                         </form>
                     </div>
-                    <div className="col-md-12 ">
+                    <div className="col-md-12">
                         <p className="copywright mt-5">© 2020 DROHealth.com. All Rights Reserved. </p>
                     </div>
                 </div>

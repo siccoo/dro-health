@@ -255,7 +255,7 @@ input[type="text"] {
     position: absolute; 
    bottom: -35px; 
    padding: 5px;
-   margin: 0px 55px;
+   margin: 0px 35px;
    align-items: center;
    border-radius: 5px;
 }
