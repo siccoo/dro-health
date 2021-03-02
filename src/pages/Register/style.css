@@ -33,8 +33,8 @@
 }
   
 .home-logo {
-    width: 174.86px;
-    height: 54.29px;
+    width: 140.86px;
+    height: 24.29px;
 }
 
 @media only screen and (max-width:1024px) {
@@ -45,7 +45,7 @@
 }
 
 .navbar-nav .nav-item .nav-btn {
-    background: #462686;
+    background: linear-gradient(90deg, #11A2BD 10%, #8B5CD4 100%);
     border-radius: 100px;
     color: #fff;
     font-family: "Open Sans Condensed";
@@ -107,7 +107,7 @@
         padding-right: 15px;
         padding-bottom: 15px;
         width: 100%;
-        background: linear-gradient(90deg, #0353A4 0%, #023E7D 100%);
+        background: linear-gradient(90deg, #11A2BD 0%, #8B5CD4 100%);
     }
     .navbar-collapse.collapsing {
         height: auto;
@@ -126,15 +126,15 @@
     }
 }
 
-.login-card {
+.signin-card {
     margin-top: 70px;
 }
 
-.login-card form {
+.signin-card form {
     max-width: 700px;
 }
 
-.login-card h3 {
+.signin-card h3 {
     /* max-width: 124px; */
     font-family: "Open Sans Condensed";
     font-style: normal;
@@ -146,13 +146,13 @@
 }
 
 @media (max-width: 992px) {
-    .login-card h3 {
+    .signin-card h3 {
         font-size: 20px;
         line-height: 24px;
     }
 }
 
-.login-card p {
+.signin-card p {
     max-width: 700px;
     font-family: "Open Sans Condensed";
     font-style: normal;
@@ -165,13 +165,13 @@
 }
 
 @media only screen and (max-width:1024px) {
-    .login-card p {
+    .signin-card p {
        font-size: 12px; 
        line-height: 22px;
     }
 }
 
-.login-card label {
+.signin-card label {
     font-family: "Open Sans Condensed";
     font-style: normal;
     font-weight: normal;
@@ -186,7 +186,7 @@
     }
 }
 
-.login-card span {
+.signin-card span {
     right: 0;
     position: absolute;
     height: 100%;
@@ -206,7 +206,7 @@
     /* color: #a7abc3; */
 /* } */
 
-.login-card input[type="email"],
+.signin-card input[type="email"],
 input[type="password"] {
     padding: .6em .5em;
     background: #FFFFFF;
@@ -217,14 +217,14 @@ input[type="password"] {
 }
 
 @media (max-width: 1024px) {
-    .login-card input[type="email"],
+    .signin-card input[type="email"],
     input[type="password"] {
         padding: .4em .3em;
         width: 100%;
     }
 }
 
-.login-card .forgot-password {
+.signin-card .forgot-password {
     max-width: 700px;
     font-family: "Open Sans Condensed";
     font-style: normal;
@@ -238,14 +238,14 @@ input[type="password"] {
 }
 
 @media only screen and (max-width:1024px) {
-    .login-card .forgot-password {
+    .signin-card .forgot-password {
        font-size: 12px; 
        line-height: 22px;
        margin: auto;
     }
 }
 
-.login-card button {
+.signin-card button {
     background: #462686;
     border-radius: 50px;
     width: 100%;
@@ -261,13 +261,13 @@ input[type="password"] {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    .login-card button {
+    .signin-card button {
         padding: 6px 9px;
         font-size: 12px;
     }
 }
 
-.login-card .social-icons {
+.signin-card .social-icons {
     position: absolute; 
    bottom: -35px; 
    padding: 5px;
@@ -276,11 +276,11 @@ input[type="password"] {
    border-radius: 5px;
 }
 
-.login-card .so-icon {
+.signin-card .so-icon {
     padding: 10px;
 }
 
-.login-card .copywright {
+.signin-card .copywright {
     max-width: 700px;
     font-family: "Open Sans Condensed";
     font-style: normal;
@@ -292,7 +292,7 @@ input[type="password"] {
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    .login-card .copywright {
+    .signin-card .copywright {
         font-size: 12px;
         line-height: 22px;
     }
