@@ -6,8 +6,23 @@ import {
     Redirect,
 } from "react-router-dom";
 
-const Routes = (props) => (
+import Login from "./pages/Login/index";
+import Register from "./pages/Register/index";
+import Dashboard from "./pages/Dashboard/index";
+import NotFound from "./pages/NotFound/index";
 
+const Routes = (props) => (
+    <Router {...props}>
+        <Switch>
+            <Route path="/login" component={Login} />
+            <Route path="/register" component={Register} />
+            <Route path="/dashboard" component={Dashboard} />
+            <Route exact path="/">
+                <Redirect to="/dashboard" />
+            </Route>
+            <Route path="*" component={NotFound} />
+        </Switch>
+  </Router>
 );
 
 export default Routes;
