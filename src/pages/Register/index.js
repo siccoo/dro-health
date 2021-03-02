@@ -78,7 +78,7 @@ const Register = (props) => {
                                     placeholder="Enter your last name"  />
                             </div> */}
                             <div className="form-group">
-                                <label for="InputForEmail">Email address</label>
+                                <label htmlFor="InputForEmail">Email address</label>
                                 <input 
                                     id="inputForEmail"
                                     type="email"
@@ -86,13 +86,15 @@ const Register = (props) => {
                                     placeholder="Enter email address" />
                             </div>
                             <div className="form-group">
-                                <label for="exampleInputEmail1">Password</label>
+                                <label htmlFor="inputForPassword">Password</label>
                                 
-                                <input type="password"  id="password" />
-                                {/* <span><FiEye className="icon"/></span>  */}
+                                <input 
+                                    type="password"
+                                    id="inputForPassword"
+                                    placeholder="Enter password" />
                             </div>
                             <button type="submit" className="">Register</button>
-                            <Link className="forgot-password">Forgot Password?</Link>
+                            <Link className="forgot-password" to="/login">Already Registered?</Link>
                             <div className="" id="social-icons mt-5">
                                 <img className="so-icon" src={Icon1} alt="alternative" />
                                 <GoogleLogin
