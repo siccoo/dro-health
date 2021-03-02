@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import config from "../../config";
 // import { GoogleLogin } from 'react-google-login';
 import "./style.css";
 
@@ -14,7 +15,6 @@ const Register = () => {
     // };
 
     const { register, handleSubmit, errors } = useForm();
-    const onSubmit = (data) => console.log(data);
     const [message, setMessage] = useState();
 
     useEffect(() => {
@@ -81,6 +81,7 @@ const Register = () => {
                 <div className="row">
                     <div className="col-sm-12 col-md-10 offset-md-2">
                         <form onSubmit={handleSubmit(onSubmit)} noValidate autoComplete="off">
+                            {message && <p>{message.data}</p>}
                             <p>Sign Up!</p>
                             <div className="form-group">
                                 <label htmlFor="inputForUsername">Username</label>
@@ -105,7 +106,7 @@ const Register = () => {
                                         },
                                       })}
                                 />
-                                {errors.username && <p className="errMsg">{errors.username}</p>}
+                                {errors.username && <p className="errMsg">{errors.username.message}</p>}
                             </div>
                             <div className="form-row">
                                 <div className="form-group col-md-6">
@@ -131,7 +132,7 @@ const Register = () => {
                                                 },
                                               })}  
                                         />
-                                        {errors.firstname && <p className="errMsg">{errors.firstname}</p>}
+                                        {errors.firstname && <p className="errMsg">{errors.firstname.message}</p>}
                                 </div>
                                 <div className="form-group col-md-6">
                                     <label htmlFor="inputForLastname">Last Name</label>
@@ -156,7 +157,7 @@ const Register = () => {
                                             },
                                           })}
                                     />
-                                    {errors.lastname && <p className="errMsg">{errors.lastname}</p>}
+                                    {errors.lastname && <p className="errMsg">{errors.lastname.message}</p>}
                                 </div>
                             </div>
                             <div className="form-group">
@@ -186,7 +187,7 @@ const Register = () => {
                                         },
                                       })}
                                 />
-                                {errors.email && <p className="errMsg">{errors.email}</p>}
+                                {errors.email && <p className="errMsg">{errors.email.message}</p>}
                             </div>
                             <div className="form-group">
                                 <label htmlFor="inputForPassword">Password</label>
@@ -211,7 +212,7 @@ const Register = () => {
                                         },
                                       })}
                                 />
-                                {errors.password && <p className="errMsg">{errors.password}</p>}
+                                {errors.password && <p className="errMsg">{errors.password.message}</p>}
                             </div>
                             <button type="submit" className="">Register</button>
                             <Link className="forgot-password" to="/login">Already Registered?</Link>
