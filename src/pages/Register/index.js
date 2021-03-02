@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 import Logo from "../../images/dro-logo.png";
+import Icon1 from "../../images/sign in.png";
 
 const Register = () => {
    return (
@@ -22,10 +23,10 @@ const Register = () => {
                             
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item">
-                                    <Link className="nav-btn1" to="/">New Customer?</Link>
+                                    <Link className="nav-btn1" to="/">New Client?</Link>
                                 </li><br />
                                 <li className="nav-item">
-                                    <Link className="nav-btn" to="/">Try for Free <FiChevronRight/></Link>
+                                    <Link className="nav-btn" to="/">Try for Free</Link>
                                 </li><br />
                             </ul>
                         </div>
@@ -54,14 +55,11 @@ const Register = () => {
                             <Link className="forgot-password">Forgot Password?</Link>
                             <div className="" id="social-icons mt-5">
                                 <img className="so-icon" src={Icon1} alt="alternative" />
-                                <img className="so-icon" src={Icon2} alt="alternative" />
-                                <img className="so-icon" src={Icon3} alt="alternative" />
-                                <img className="so-icon" src={Icon4} alt="alternative" />
                             </div>
                         </form>
                     </div>
                     <div className="col-md-12 ">
-                        <p className="copywright mt-5">© 2020 Oneburner.com. All Rights Reserved. </p>
+                        <p className="copywright mt-5">© 2020 DROHealth.com. All Rights Reserved. </p>
                     </div>
                 </div>
             </div>
