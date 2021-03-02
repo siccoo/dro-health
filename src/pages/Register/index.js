@@ -7,7 +7,7 @@ import "./style.css";
 import Logo from "../../images/dro-logo.png";
 // import Icon1 from "../../images/sign in.png";
 
-const Register = (props) => {
+const Register = () => {
     // const responseGoogle = () => {
     //     props.history.push("/");
     //     window.location.reload();
@@ -15,10 +15,37 @@ const Register = (props) => {
 
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = (data) => console.log(data);
+    const [message, setMessage] = useState();
 
     useEffect(() => {
         document.title = "Create account | DRO Health";
     }, []);
+
+    
+
+  const onSubmit = (data, e) => {
+    setMessage({
+      data: "Registration is in progress...",
+      type: "alert-warning",
+    });
+    fetch(`${config.baseUrl}/user/register`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        const hasError = "error" in data && data.error != null;
+        setMessage({
+          data: hasError ? data.error : "Registered successfully",
+          type: hasError ? "alert-danger" : "alert-success",
+        });
+
+        !hasError && e.target.reset();
+      });
+  };
 
 
    return (
@@ -78,6 +105,7 @@ const Register = (props) => {
                                         },
                                       })}
                                 />
+                                {errors.username && <p className="errMsg">{errors.username}</p>}
                             </div>
                             <div className="form-row">
                                 <div className="form-group col-md-6">
@@ -98,11 +126,12 @@ const Register = (props) => {
                                                   message: "Minimum 6 characters are allowed",
                                                 },
                                                 maxLength: {
-                                                  value: 15,
-                                                  message: "Maximum 15 characters are allowed",
+                                                  value: 225,
+                                                  message: "Maximum 225 characters are allowed",
                                                 },
                                               })}  
                                         />
+                                        {errors.firstname && <p className="errMsg">{errors.firstname}</p>}
                                 </div>
                                 <div className="form-group col-md-6">
                                     <label htmlFor="inputForLastname">Last Name</label>
@@ -122,11 +151,12 @@ const Register = (props) => {
                                               message: "Minimum 6 characters are allowed",
                                             },
                                             maxLength: {
-                                              value: 15,
-                                              message: "Maximum 15 characters are allowed",
+                                              value: 225,
+                                              message: "Maximum 225 characters are allowed",
                                             },
                                           })}
                                     />
+                                    {errors.lastname && <p className="errMsg">{errors.lastname}</p>}
                                 </div>
                             </div>
                             <div className="form-group">
@@ -156,6 +186,7 @@ const Register = (props) => {
                                         },
                                       })}
                                 />
+                                {errors.email && <p className="errMsg">{errors.email}</p>}
                             </div>
                             <div className="form-group">
                                 <label htmlFor="inputForPassword">Password</label>
@@ -180,6 +211,7 @@ const Register = (props) => {
                                         },
                                       })}
                                 />
+                                {errors.password && <p className="errMsg">{errors.password}</p>}
                             </div>
                             <button type="submit" className="">Register</button>
                             <Link className="forgot-password" to="/login">Already Registered?</Link>
