@@ -61,13 +61,18 @@ const Register = (props) => {
                                 />
                             </div>
                             <div className="form-group">
-                                <label htmlFor="InputFirstname1">First Name</label>
-                                <input type="text"  id="email_address" />
+                                <label htmlFor="inputFirstname">First Name</label>
+                                <input 
+                                    id="inputForFirstname"
+                                    type="text"
+                                    aria-describedby="Enter your first name"
+                                    placeholder="Enter your first name"  
+                                />
                             </div>
-                            <div className="form-group">
+                            {/* <div className="form-group">
                                 <label htmlFor="InputLastname1">Last Name</label>
                                 <input type="text"  id="email_address" />
-                            </div>
+                            </div> */}
                             <div className="form-group">
                                 <label for="InputEmail1">Email</label>
                                 <input type="email"  id="email_address" />
@@ -84,7 +89,7 @@ const Register = (props) => {
                                 <img className="so-icon" src={Icon1} alt="alternative" />
                                 <GoogleLogin
                                     clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
-                                    // buttonText="Continue with Google"
+                                    buttonText="Continue with Google"
                                     onSuccess={()=>responseGoogle}
                                     onFailure={()=>responseGoogle}
                                     cookiePolicy={'single_host_origin'}

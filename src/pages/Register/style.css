@@ -201,7 +201,8 @@ input[type="text"] {
 
 @media (max-width: 1024px) {
     .signin-card input[type="email"],
-    input[type="password"] {
+    input[type="password"],
+    input[type="text"] {
         padding: .4em .3em;
         width: 100%;
     }
