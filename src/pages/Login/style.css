@@ -210,6 +210,13 @@ input[type="text"] {
     }
 }
 
+.login-card .errMsg {
+    font-size: 0.8rem;
+    margin-bottom: 0.1em;
+    color: #f00e0e;
+    text-align: left !important;
+}
+
 .login-card .forgot-password {
     max-width: 700px;
     font-family: "Raleway";

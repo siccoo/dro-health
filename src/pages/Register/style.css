@@ -210,9 +210,10 @@ input[type="text"] {
 
 .signin-card .errMsg {
     font-size: 0.8rem;
-    margin-top: 0.5rem;
+    margin-bottom: 0.1em;
     color: #f00e0e;
-  }
+    text-align: left !important;
+}
 
 .signin-card .forgot-password {
     max-width: 700px;
