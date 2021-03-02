@@ -34,7 +34,7 @@ const Register = (props) => {
                             
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item">
-                                    <Link className="nav-btn1" to="/">New Client?</Link>
+                                    <Link className="nav-btn1" to="/">Consultations?</Link>
                                 </li><br />
                                 <li className="nav-item">
                                     <Link className="nav-btn" to="/">Try for Free</Link>
@@ -111,7 +111,7 @@ const Register = (props) => {
                         </form>
                     </div>
                     <div className="col-md-12">
-                        <p className="copywright mt-3">© 2020 DROHealth.com. All Rights Reserved. </p>
+                        <p className="copywright mt-5   ">© 2020 DROHealth.com. All Rights Reserved. </p>
                     </div>
                 </div>
             </div>

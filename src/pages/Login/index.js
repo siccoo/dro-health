@@ -32,7 +32,7 @@ const Login = (props) => {
                             
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item">
-                                    <Link className="nav-btn1" to="/">New Client?</Link>
+                                    <Link className="nav-btn1" to="/">Consultations?</Link>
                                 </li><br />
                                 <li className="nav-item">
                                     <Link className="nav-btn" to="/">Try for Free</Link>
