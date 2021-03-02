@@ -70,12 +70,20 @@ const Register = (props) => {
                                 />
                             </div>
                             {/* <div className="form-group">
-                                <label htmlFor="InputLastname1">Last Name</label>
-                                <input type="text"  id="email_address" />
+                                <label htmlFor="inputForLastname">Last Name</label>
+                                <input 
+                                    id="inputForLastname"
+                                    type="text"
+                                    aria-describedby="Enter your last name"
+                                    placeholder="Enter your last name"  />
                             </div> */}
                             <div className="form-group">
-                                <label for="InputEmail1">Email</label>
-                                <input type="email"  id="email_address" />
+                                <label for="InputForEmail">Email address</label>
+                                <input 
+                                    id="inputForEmail"
+                                    type="email"
+                                    aria-describedby="Enter email address"
+                                    placeholder="Enter email address" />
                             </div>
                             <div className="form-group">
                                 <label for="exampleInputEmail1">Password</label>
@@ -83,7 +91,7 @@ const Register = (props) => {
                                 <input type="password"  id="password" />
                                 {/* <span><FiEye className="icon"/></span>  */}
                             </div>
-                            <button type="submit" className="">Login</button>
+                            <button type="submit" className="">Register</button>
                             <Link className="forgot-password">Forgot Password?</Link>
                             <div className="" id="social-icons mt-5">
                                 <img className="so-icon" src={Icon1} alt="alternative" />
