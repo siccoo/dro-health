@@ -27,7 +27,7 @@ const Login = () => {
           data: "Login is in progress...",
           type: "alert-warning",
         });
-        fetch(`${config.baseUrl}/user/login`, {
+        fetch(`${config.baseUrl}/login`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -36,6 +36,7 @@ const Login = () => {
         })
           .then((res) => res.json())
           .then(({ error, data }) => {
+            //   console.log(data)
             setMessage({
               data: error || "Logged in successfully, redirecting...",
               type: error ? "alert-danger" : "alert-success",
