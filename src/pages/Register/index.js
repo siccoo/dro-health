@@ -37,6 +37,7 @@ const Register = () => {
     })
       .then((res) => res.json())
       .then((data) => {
+        // console.log(data);
         const hasError = "error" in data && data.error != null;
         setMessage({
           data: hasError ? data.error : "Registered successfully",

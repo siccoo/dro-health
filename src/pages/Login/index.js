@@ -1,5 +1,7 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useHistory } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import config from "../../config";
 // import { GoogleLogin } from 'react-google-login';
 import "./style.css";
 
@@ -11,6 +13,10 @@ const Login = () => {
     //     props.history.push("/");
     //     window.location.reload();
     // };
+
+    const { register, handleSubmit, errors } = useForm();
+    const [message, setMessage] = useState();
+    const history = useHistory()
 
     useEffect(() => {
         document.title = "Login | DRO Health";
