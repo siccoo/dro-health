@@ -89,18 +89,50 @@ const Login = () => {
                                 <label htmlFor="inputForUsername">Username</label>
                                 <input 
                                     id="inputForUsername"
+                                    name="username"
                                     type="text"
                                     aria-describedby="Enter your username"
-                                    placeholder="Enter your username" 
+                                    placeholder="Enter your username"
+                                    ref={register({
+                                        required: {
+                                          value: true,
+                                          message: "Please enter your user name",
+                                        },
+                                        minLength: {
+                                          value: 4,
+                                          message: "Minimum 4 characters are allowed",
+                                        },
+                                        maxLength: {
+                                          value: 15,
+                                          message: "Maximum 15 characters are allowed",
+                                        },
+                                      })} 
                                 />
+                                {errors.username && <p className="errMsg">{errors.username.message}</p>}
                             </div>
                             <div className="form-group">
                                 <label htmlFor="inputForPassword">Password</label>
-                                
                                 <input 
                                     type="password"
+                                    name="password"
                                     id="inputForPassword"
-                                    placeholder="Enter password" />
+                                    placeholder="Enter password"
+                                    ref={register({
+                                        required: {
+                                          value: true,
+                                          message: "Please enter password",
+                                        },
+                                        minLength: {
+                                          value: 6,
+                                          message: "Minimum 6 characters are allowed",
+                                        },
+                                        maxLength: {
+                                          value: 255,
+                                          message: "Maximum 255 characters are allowed",
+                                        },
+                                      })} 
+                                />
+                                {errors.password && <p className="errMsg">{errors.password.message}</p>}
                             </div>
                             <button type="submit" className="">Login</button>
                             <Link className="forgot-password" to="/register">Not Registered?</Link>
