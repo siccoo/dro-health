@@ -84,6 +84,7 @@ const Login = () => {
                 <div className="row">
                     <div className="col-sm-12 col-md-10 offset-md-2">
                         <form onSubmit={handleSubmit(onSubmit)} noValidate autoComplete="off">
+                        {message && <span>{message.data}</span>}
                             <p>Welcome back!</p>
                             <div className="form-group">
                                 <label htmlFor="inputForUsername">Username</label>
