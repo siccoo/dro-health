@@ -15,7 +15,7 @@ const authGuard = (Component) => () => {
     return localStorage.getItem("token") ? (
       <Component />
     ) : (
-      <Redirect to="/login" />
+      <Redirect to="/register" />
     );
 };
 
