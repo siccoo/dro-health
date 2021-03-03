@@ -6,7 +6,7 @@ import "./style.css";
 import Logo from "../../images/dro-logo.png";
 // import Icon1 from "../../images/sign in.png";
 
-const Login = (props) => {
+const Login = () => {
     // const responseGoogle = () => {
     //     props.history.push("/");
     //     window.location.reload();

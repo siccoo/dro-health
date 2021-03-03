@@ -28,7 +28,7 @@ const Register = () => {
       data: "Registration is in progress...",
       type: "alert-warning",
     });
-    fetch(`${config.baseUrl}/user/register`, {
+    fetch(`${config.baseUrl}/create/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
