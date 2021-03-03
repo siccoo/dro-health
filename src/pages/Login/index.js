@@ -83,7 +83,7 @@ const Login = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-sm-12 col-md-10 offset-md-2">
-                        <form>
+                        <form onSubmit={handleSubmit(onSubmit)} noValidate autoComplete="off">
                             <p>Welcome back!</p>
                             <div className="form-group">
                                 <label htmlFor="inputForUsername">Username</label>
