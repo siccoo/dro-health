@@ -21,6 +21,35 @@ const Login = () => {
     useEffect(() => {
         document.title = "Login | DRO Health";
     }, []);
+
+    const onSubmit = (data, e) => {
+        setMessage({
+          data: "Login is in progress...",
+          type: "alert-warning",
+        });
+        fetch(`${config.baseUrl}/user/login`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        })
+          .then((res) => res.json())
+          .then(({ error, data }) => {
+            setMessage({
+              data: error || "Logged in successfully, redirecting...",
+              type: error ? "alert-danger" : "alert-success",
+            });
+    
+            !error &&
+              setTimeout(() => {
+                localStorage.setItem("token", data.token);
+                history.push("/dashboard");
+              }, 3000);
+    
+            !error && e.target.reset();
+          });
+      };
     return (
         <div>
             <section className="nav-section">
