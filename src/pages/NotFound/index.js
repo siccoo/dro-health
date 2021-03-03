@@ -1,10 +1,5 @@
 import React from "react";
-import "./style.css"
 
-const NotFound = () => {
-    return (
-        <div>This is NotFound route</div>
-    ) 
-}
+const NotFound = () => <h1>Page Not Found Page</h1>;
 
 export default NotFound;
